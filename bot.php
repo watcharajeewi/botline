@@ -16,6 +16,17 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			
+			
+			$topic=array("สวัสดี","ทำอะไรอยู่","กินข้าวยัง","นอนยัง","อยู่กะใคร");
+			$answer=array("สวัสดีด้วย","เล่นไลน์จ๊ะ","กินแล้วจ๊ะ กินหรือยัง","นอนจะตอบไลน์มุงได้เหรอ","อยู่คนเดียว");
+			
+			if(in_array($text,$topic)){
+				$indexofarray=array_search($text, $topic);
+				$text=$answer[$indexofarray];
+			}
+			
+			
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
