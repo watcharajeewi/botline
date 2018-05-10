@@ -29,9 +29,8 @@ if (!is_null($events['events'])) {
 			
 			// Build message to reply back
 			$messages = [
-				"type": "image",
-				    "originalContentUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
-				    "previewImageUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg"
+				"type": "text",
+				    "text": "\uDBC0\uDC84 LINE emoji"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
