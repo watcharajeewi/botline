@@ -39,14 +39,14 @@ if (!is_null($events['events'])) {
 				];
 			*/
 			$messages = [
-				"type": "imagemap",
-				  "baseUrl": 'http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg',
-				  "altText": "This is an imagemap",
-				  "baseSize": {
+				"type"=> "imagemap",
+				  "baseUrl"=>'http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg',
+				  "altText"=>"This is an imagemap",
+				  "baseSize"=>{
 				      "height": 1040,
 				      "width": 1040
 				  },
-				  "actions": [
+				  "actions"=>[
 				      {
 					  "type": "uri",
 					  "linkUri": "https://example.com/",
