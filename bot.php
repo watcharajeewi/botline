@@ -33,9 +33,9 @@ if (!is_null($events['events'])) {
 				'text' => $text
 				];*/
 			$messages = [
-				"type"=> "image",
-				    "originalContentUrl"=> "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
-				    "previewImageUrl"=> "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg"
+				"type":"image",
+				    "originalContentUrl":"https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
+				    "previewImageUrl":"https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg"
 				];
 			
 
