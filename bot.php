@@ -42,10 +42,10 @@ if (!is_null($events['events'])) {
 				  "type"=>"imagemap",
 				  "baseUrl"=>"https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
 				  "altText"=>"This is an imagemap",
-				  "baseSize"=>[
+				  "baseSize"=>{
 					  "height"=> 1040,
 					  "width"=> 1040
-				  ],
+				  },
 				  "actions"=>[
 					  {
 						  "type"=>"uri",
