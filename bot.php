@@ -33,11 +33,35 @@ if (!is_null($events['events'])) {
 				'text' => $text
 				];*/
 			$messages = [
-				"type": "location",
-				    "title": "my location",
-				    "address": "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
-				    "latitude": 35.65910807942215,
-				    "longitude": 139.70372892916203
+				"type": "imagemap",
+					  "baseUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
+					  "altText": "This is an imagemap",
+					  "baseSize": {
+					      "height": 1040,
+					      "width": 1040
+					  },
+					  "actions": [
+					      {
+						  "type": "uri",
+						  "linkUri": "https://google.com/",
+						  "area": {
+						      "x": 0,
+						      "y": 0,
+						      "width": 520,
+						      "height": 1040
+						  }
+					      },
+					      {
+						  "type": "message",
+						  "text": "Hello",
+						  "area": {
+						      "x": 520,
+						      "y": 0,
+						      "width": 520,
+						      "height": 1040
+						  }
+					      }
+					  ]
 				];
 			
 
