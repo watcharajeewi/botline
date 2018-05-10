@@ -50,22 +50,22 @@ if (!is_null($events['events'])) {
 					  {
 						  "type"=>"uri",
 						  "linkUri"=>"https://example.com/",
-						  "area"=>[
+						  "area"=>{
 							  "x"=> 0,
 							  "y"=> 0,
 							  "width"=> 520,
 							  "height"=> 1040
-						  ]
+							  {
 					  },
 					  {
 						  "type"=> "message",
 						  "text"=> "Hello",
-						  "area"=> [
+						  "area"=> {
 							  "x"=> 520,
 							  "y"=> 0,
 							  "width"=> 520,
 							  "height"=> 1040
-						  ]
+							  {
 					  }
 				  ]
 				];
