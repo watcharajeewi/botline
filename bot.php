@@ -28,10 +28,16 @@ if (!is_null($events['events'])) {
 			
 			
 			// Build message to reply back
-			$messages = [
+			/*$messages = [
 				'type' => 'text',
 				'text' => $text
+				];*/
+			$messages = [
+				"type": "image",
+				    "originalContentUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
+				    "previewImageUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg"
 				];
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
