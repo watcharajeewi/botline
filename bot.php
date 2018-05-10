@@ -38,42 +38,42 @@ if (!is_null($events['events'])) {
 				    "previewImageUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg'
 				];
 			*/
-			$messages = {
-				  "type": "imagemap",
-				  "baseUrl": "https://example.com/bot/images/rm001",
-				  "altText": "This is an imagemap",
-				  "baseSize": {
-				      "height": 1040,
-				      "width": 1040
-				  },
-				  "actions": [
-				      {
-					  "type": "uri",
-					  "linkUri": "https://example.com/",
-					  "area": {
-					      "x": 0,
-					      "y": 0,
-					      "width": 520,
-					      "height": 1040
-					  }
-				      },
-				      {
-					  "type": "message",
-					  "text": "Hello",
-					  "area": {
-					      "x": 520,
-					      "y": 0,
-					      "width": 520,
-					      "height": 1040
-					  }
-				      }
-				  ]
-				};
+			$messages = [{
+  "type": "imagemap",
+  "baseUrl": "https://example.com/bot/images/rm001",
+  "altText": "This is an imagemap",
+  "baseSize": {
+      "height": 1040,
+      "width": 1040
+  },
+  "actions": [
+      {
+          "type": "uri",
+          "linkUri": "https://example.com/",
+          "area": {
+              "x": 0,
+              "y": 0,
+              "width": 520,
+              "height": 1040
+          }
+      },
+      {
+          "type": "message",
+          "text": "Hello",
+          "area": {
+              "x": 520,
+              "y": 0,
+              "width": 520,
+              "height": 1040
+          }
+      }
+  ]
+}];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => $messages,
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
