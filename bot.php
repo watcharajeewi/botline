@@ -32,13 +32,43 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $text
 				];*/
-			$messages = [
+			/*$messages = [
 				"type"=>'image',
 				    "originalContentUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg',
 				    "previewImageUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg'
 				];
-			
-
+			*/
+			$messages = [
+				"type": "imagemap",
+				  "baseUrl": 'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg',
+				  "altText": "This is an imagemap",
+				  "baseSize": {
+				      "height": 1040,
+				      "width": 1040
+				  },
+				  "actions": [
+				      {
+					  "type": "uri",
+					  "linkUri": "https://example.com/",
+					  "area": {
+					      "x": 0,
+					      "y": 0,
+					      "width": 520,
+					      "height": 1040
+					  }
+				      },
+				      {
+					  "type": "message",
+					  "text": "Hello",
+					  "area": {
+					      "x": 520,
+					      "y": 0,
+					      "width": 520,
+					      "height": 1040
+					  }
+				      }
+				  ]
+			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
