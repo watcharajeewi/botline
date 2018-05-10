@@ -34,31 +34,31 @@ if (!is_null($events['events'])) {
 				];*/
 			$messages = [
 				"type": "imagemap",
-					  "baseUrl": "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
-					  "altText": "This is an imagemap",
-					  "baseSize": {
-					      "height": 1040,
-					      "width": 1040
+					  "baseUrl"=> "https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg",
+					  "altText"=> "This is an imagemap",
+					  "baseSize"=> {
+					      "height"=> 1040,
+					      "width"=> 1040
 					  },
 					  "actions": [
 					      {
-						  "type": "uri",
-						  "linkUri": "https://google.com/",
-						  "area": {
-						      "x": 0,
-						      "y": 0,
-						      "width": 520,
-						      "height": 1040
+						  "type"=> "uri",
+						  "linkUri"=> "https://google.com/",
+						  "area"=> {
+						      "x"=> 0,
+						      "y"=> 0,
+						      "width"=> 520,
+						      "height"=> 1040
 						  }
 					      },
 					      {
-						  "type": "message",
-						  "text": "Hello",
-						  "area": {
-						      "x": 520,
-						      "y": 0,
-						      "width": 520,
-						      "height": 1040
+						  "type"=> "message",
+						  "text"=> "Hello",
+						  "area"=> {
+						      "x"=> 520,
+						      "y"=> 0,
+						      "width"=> 520,
+						      "height"=> 1040
 						  }
 					      }
 					  ]
