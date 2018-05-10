@@ -45,8 +45,8 @@ if (!is_null($events['events'])) {
 				  "baseSize"=>{
 					  "height"=> 1040,
 					  "width"=> 1040
-				  },
-				  "actions"=>[
+					  },
+				  "actions"=>{
 					  {
 						  "type"=>"uri",
 						  "linkUri"=>"https://example.com/",
@@ -67,7 +67,7 @@ if (!is_null($events['events'])) {
 							  "height"=> 1040
 							  {
 					  }
-				  ]
+						  }
 				];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
