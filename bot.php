@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			*/
 			$messages = [
 				  "type"=>"imagemap",
-				  "baseUrl"=>'https://car.tabienrod.com/testimga/',
+				  "baseUrl"=>'https://car.tabienrod.com/testimga',
 				  "altText"=>"This is an imagemap",
 				  "baseSize"=>array(
 					  "height"=> 1040,
@@ -49,7 +49,7 @@ if (!is_null($events['events'])) {
 				  "actions"=>array(
 					  0=>array(
 						  "type"=>"uri",
-						  "linkUri"=>"https://example.com/",
+						  "linkUri"=>"http://1morenews.com/",
 						  "area"=>array(
 							  "x"=> 0,
 							  "y"=> 0,
@@ -58,8 +58,8 @@ if (!is_null($events['events'])) {
 							  )
 						  ),
 					 1=>array(
-						  "type"=> "message",
-						  "text"=> "Hello",
+						 "type"=>"uri",
+						  "linkUri"=>"http://1morenews.com/",
 						  "area"=> array(
 							  "x"=> 520,
 							  "y"=> 0,
