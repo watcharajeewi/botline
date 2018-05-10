@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			*/
 			$messages = [
 				  "type"=>"imagemap",
-				  "baseUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg',
+				  "baseUrl"=>'https://www.car.tabienrod.com/ses.jpg',
 				  "altText"=>"This is an imagemap",
 				  "baseSize"=>array(
 					  "height"=> 1040,
