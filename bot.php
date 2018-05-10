@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
 					  "width"=> 1040
 				  ],
 				  "actions"=>[
-					  [
+					  {
 						  "type"=>"uri",
 						  "linkUri"=>"https://example.com/",
 						  "area"=>[
@@ -56,8 +56,8 @@ if (!is_null($events['events'])) {
 							  "width"=> 520,
 							  "height"=> 1040
 						  ]
-					  ],
-					  [
+					  },
+					  {
 						  "type"=> "message",
 						  "text"=> "Hello",
 						  "area"=> [
@@ -66,7 +66,7 @@ if (!is_null($events['events'])) {
 							  "width"=> 520,
 							  "height"=> 1040
 						  ]
-					  ]
+					  }
 				  ]
 				];
 			// Make a POST Request to Messaging API to reply to sender
