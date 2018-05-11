@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			*/
 			$messages = [
 				  "type"=>"imagemap",
-				  "baseUrl"=>'https://car.tabienrod.com/testimga/700',
+				  "baseUrl"=>'https://github.com/line/line-bot-sdk-go/tree/master/examples/kitchensink/static/rich',
 				  "altText"=>"This is an imagemap",
 				  "baseSize"=>array(
 					  "height"=> 1040,
