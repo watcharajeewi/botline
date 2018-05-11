@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			*/
 			$messages = [
 				  "type"=>"imagemap",
-				  "baseUrl"=>'https://car.tabienrod.com/testimga/700.png',
+				  "baseUrl"=>'https://api.reh.tw/line/bot/example/assets/images/example',
 				  "altText"=>"This is an imagemap",
 				  "baseSize"=>array(
 					  "height"=> 1040,
