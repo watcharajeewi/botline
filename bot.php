@@ -28,17 +28,17 @@ if (!is_null($events['events'])) {
 			
 			
 			// Build message to reply back
-			/*$messages = [
+			$messages = [
 				'type' => 'text',
 				'text' => $text
-				];*/
+				];
 			/*$messages = [
 				"type"=>'image',
 				    "originalContentUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg',
 				    "previewImageUrl"=>'https://www.telegraph.co.uk/content/dam/Travel/2017/April/view-stonehange.jpg'
 				];
 			*/
-			$messages = [
+			/*$messages = [
 				  "type"=>"imagemap",
 				  "baseUrl"=>'https://car.tabienrod.com/testimga',
 				  "altText"=>"This is an imagemap",
@@ -68,12 +68,12 @@ if (!is_null($events['events'])) {
 						  )
 					)
 					 )
-				];
+				];*/
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => $text,
+				'messages' => $messages,
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
