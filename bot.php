@@ -20,102 +20,102 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$jsonFlex = [
+			$jsonFlex = [
   "type"=> "flex",
   "altText"=> "Flex Message",
   "contents"=> [
-    "type"=> "bubble",
-    "header"=> [
-      "type"=> "box",
-      "layout"=> "horizontal",
-      "contents"=> [
-        [
-          "type"=> "text",
-          "text"=> "งานประมูลที่กำลังจะถึง",
-          "size"=> "sm",
-          "weight"=> "bold",
-          "color"=> "#AAAAAA"
-        ]
-      ]
-    ],
-    "body"=> [
-      "type"=> "box",
-      "layout"=> "horizontal",
-      "spacing"=> "md",
-      "contents"=> [
-        [
-          "type"=> "box",
-          "layout"=> "vertical",
-          "flex"=> 1,
-          "contents"=> [
-            [
-              "type"=> "image",
-              "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_1.png",
-              "gravity"=> "bottom",
-              "size"=> "sm",
-              "aspectRatio"=> "4:3",
-              "aspectMode"=> "cover"
-            ],
-            [
-              "type"=> "image",
-              "url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_2.png",
-              "margin"=> "md",
-              "size"=> "sm",
-              "aspectRatio"=> "4:3",
-              "aspectMode"=> "cover"
-            ],
-            [
-              "type"=> "image",
-              "url"=> "https://developers.line.me/assets/images/services/bot-designer-icon.png"
-            ]
-          ]
-        ],
-        [
-          "type"=> "box",
-          "layout"=> "vertical",
-          "flex"=> 2,
-          "contents"=> [
-            [
-              "type"=> "text",
-              "text"=> "7 Things to Know for Today",
-              "flex"=> 1,
-              "size"=> "xs",
-              "gravity"=> "top"
-            ],
-            [
-              "type"=> "separator"
-            ],
-            [
-              "type"=> "text",
-              "text"=> "Hay fever goes wild",
-              "flex"=> 2,
-              "size"=> "xs",
-              "gravity"=> "center"
-            ],
-            [
-              "type"=> "separator"
-            ],
-            [
-              "type"=> "text",
-              "text"=> "LINE Pay Begins Barcode Payment Service",
-              "flex"=> 2,
-              "size"=> "xs",
-              "gravity"=> "center"
-            ],
-            [
-              "type"=> "separator"
-            ],
-            [
-              "type"=> "text",
-              "text"=> "LINE Adds LINE Wallet",
-              "flex"=> 1,
-              "size"=> "xs",
-              "gravity"=> "bottom"
-            ]
-          ]
-        ]
-      ]
-    ]
+		"type"=> "bubble",
+			"header"=> [
+				"type"=> "box",
+				"layout"=> "horizontal",
+				"contents"=> [
+					[
+						"type"=> "text",
+						"text"=> "งานประมูลที่กำลังจะถึง",
+						"size"=> "sm",
+						"weight"=> "bold",
+						"color"=> "#AAAAAA"
+					]
+				]
+			],
+			"body"=> [
+				"type"=> "box",
+				"layout"=> "horizontal",
+				"spacing"=> "md",
+				"contents"=> [
+					[
+						"type"=> "box",
+						"layout"=> "vertical",
+						"flex"=> 1,
+						"contents"=> [
+							[
+								"type"=> "image",
+								"url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_1.png",
+								"gravity"=> "bottom",
+								"size"=> "sm",
+								"aspectRatio"=> "4:3",
+								"aspectMode"=> "cover"
+							],
+						[
+						"type"=> "image",
+						"url"=> "https://scdn.line-apps.com/n/channel_devcenter/img/fx/02_1_news_thumbnail_2.png",
+						"margin"=> "md",
+						"size"=> "sm",
+						"aspectRatio"=> "4:3",
+						"aspectMode"=> "cover"
+					],
+					[
+					  "type"=> "image",
+					  "url"=> "https://developers.line.me/assets/images/services/bot-designer-icon.png"
+					]
+				]
+			],
+			[
+				  "type"=> "box",
+				  "layout"=> "vertical",
+				  "flex"=> 2,
+				  "contents"=> [
+					[
+					  "type"=> "text",
+					  "text"=> "7 Things to Know for Today",
+					  "flex"=> 1,
+					  "size"=> "xs",
+					  "gravity"=> "top"
+					],
+					[
+					  "type"=> "separator"
+					],
+					[
+					  "type"=> "text",
+					  "text"=> "Hay fever goes wild",
+					  "flex"=> 2,
+					  "size"=> "xs",
+					  "gravity"=> "center"
+					],
+					[
+					  "type"=> "separator"
+					],
+					[
+					  "type"=> "text",
+					  "text"=> "LINE Pay Begins Barcode Payment Service",
+					  "flex"=> 2,
+					  "size"=> "xs",
+					  "gravity"=> "center"
+					],
+					[
+					  "type"=> "separator"
+					],
+					[
+					  "type"=> "text",
+					  "text"=> "LINE Adds LINE Wallet",
+					  "flex"=> 1,
+					  "size"=> "xs",
+					  "gravity"=> "bottom"
+					]
+				  ]
+				]
+			  ]
+    
   
   ];
 			
