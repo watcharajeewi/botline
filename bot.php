@@ -20,7 +20,8 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$data={"type": "flex",
+				$messages = ['{
+  "type": "flex",
   "altText": "Flex Message",
   "contents": {
     "type": "bubble",
@@ -116,8 +117,13 @@ if (!is_null($events['events'])) {
       ]
     }
   }
-};
-			$post = $data;
+}'];
+			
+				$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages],
+				];
+				$post = json_encode($data);
 			}else{
 				$text='';	
 				$messages = [
@@ -133,8 +139,8 @@ if (!is_null($events['events'])) {
 			}
 			
 			
-			// Make a POST Request to Messaging API to reply to sender
-				$url = 'https://api.line.me/v2/bot/message/reply';
+			
+			$url = 'https://api.line.me/v2/bot/message/reply';
 				
 					
 		
