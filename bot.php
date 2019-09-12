@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			if($text=="งานประมูลที่กำลังจะถึง"){
 			$jsonFlex = [
   "type" => "flex",
-    "altText" => "Hello Flex Message",
+    "altText" => "งานประมูลที่กำลังจะถึง",
     "contents" => [
       "type" => "bubble",
       "direction" => "ltr",
@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
         "contents" => [
           [
             "type" => "text",
-            "text" => "Purchase",
+            "text" => "งานประมูลที่กำลังจะถึง",
             "size" => "lg",
             "align" => "start",
             "weight" => "bold",
