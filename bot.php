@@ -169,7 +169,7 @@ if (!is_null($events['events'])) {
     ],
     "flex" =>  0
   ]
-
+      ]
   
   ];
 			
