@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$messages = {
+				$messages = ['{
   "type": "bubble",
   "body": {
     "type": "box",
@@ -141,7 +141,7 @@ if (!is_null($events['events'])) {
     ],
     "paddingAll": "0px"
   }
-};
+}'];
 			
 				$data = [
 				'replyToken' => $replyToken,
