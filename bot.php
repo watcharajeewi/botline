@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$data=['{
+				$data='{
   "type": "flex",
   "altText": "Flex Message",
   "contents": {
@@ -117,7 +117,7 @@ if (!is_null($events['events'])) {
       ]
     }
   }
-}'];
+}';
 			}else{
 				$text='';	
 				$messages = [
