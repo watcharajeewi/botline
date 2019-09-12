@@ -20,135 +20,130 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$messages = [
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "image",
-        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip3.jpg",
-        "size": "full",
-        "aspectMode": "cover",
-        "aspectRatio": "1:1",
-        "gravity": "center"
-      },
-      {
-        "type": "image",
-        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip15.png",
-        "position": "absolute",
-        "aspectMode": "fit",
-        "aspectRatio": "1:1",
-        "offsetTop": "0px",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px",
-        "size": "full"
-      },
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "horizontal",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Brown Grand Hotel",
-                    "size": "xl",
-                    "color": "#ffffff"
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "baseline",
-                "contents": [
-                  {
-                    "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                  },
-                  {
-                    "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                  },
-                  {
-                    "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                  },
-                  {
-                    "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                  },
-                  {
-                    "type": "icon",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-                  },
-                  {
-                    "type": "text",
-                    "text": "4.0",
-                    "color": "#a9a9a9"
-                  }
-                ],
-                "spacing": "xs"
-              },
-              {
-                "type": "box",
-                "layout": "horizontal",
-                "contents": [
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "text",
-                        "text": "¥62,000",
-                        "color": "#ffffff",
-                        "size": "md",
-                        "flex": 0,
-                        "align": "end"
-                      },
-                      {
-                        "type": "text",
-                        "text": "¥82,000",
-                        "color": "#a9a9a9",
-                        "decoration": "line-through",
-                        "size": "sm",
-                        "align": "end"
-                      }
-                    ],
-                    "flex": 0,
-                    "spacing": "lg"
-                  }
-                ]
-              }
-            ],
-            "spacing": "xs"
-          }
-        ],
-        "position": "absolute",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px",
-        "paddingAll": "20px"
-      }
-    ],
-    "paddingAll": "0px"
-  }
-];
+				$jsonFlex = [
+    "type" => "flex",
+    "altText" => "Hello Flex Message",
+    "contents" => [
+      "type" => "bubble",
+      "direction" => "ltr",
+      "header" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "Purchase",
+            "size" => "lg",
+            "align" => "start",
+            "weight" => "bold",
+            "color" => "#009813"
+          ],
+          [
+            "type" => "text",
+            "text" => "฿ 100.00",
+            "size" => "3xl",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "Rabbit Line Pay",
+            "size" => "lg",
+            "weight" => "bold",
+            "color" => "#000000"
+          ],
+          [
+            "type" => "text",
+            "text" => "2019.02.14 21:47 (GMT+0700)",
+            "size" => "xs",
+            "color" => "#B2B2B2"
+          ],
+          [
+            "type" => "text",
+            "text" => "Payment complete.",
+            "margin" => "lg",
+            "size" => "lg",
+            "color" => "#000000"
+          ]
+        ]
+      ],
+      "body" => [
+        "type" => "box",
+        "layout" => "vertical",
+        "contents" => [
+          [
+            "type" => "separator",
+            "color" => "#C3C3C3"
+          ],
+          [
+            "type" => "box",
+            "layout" => "baseline",
+            "margin" => "lg",
+            "contents" => [
+              [
+                "type" => "text",
+                "text" => "Merchant",
+                "align" => "start",
+                "color" => "#C3C3C3"
+              ],
+              [
+                "type" => "text",
+                "text" => "BTS 01",
+                "align" => "end",
+                "color" => "#000000"
+              ]
+            ]
+          ],
+          [
+            "type" => "box",
+            "layout" => "baseline",
+            "margin" => "lg",
+            "contents" => [
+              [
+                "type" => "text",
+                "text" => "New balance",
+                "color" => "#C3C3C3"
+              ],
+              [
+                "type" => "text",
+                "text" => "฿ 45.57",
+                "align" => "end"
+              ]
+            ]
+          ],
+          [
+            "type" => "separator",
+            "margin" => "lg",
+            "color" => "#C3C3C3"
+          ]
+        ]
+      ],
+      "footer" => [
+        "type" => "box",
+        "layout" => "horizontal",
+        "contents" => [
+          [
+            "type" => "text",
+            "text" => "View Details",
+            "size" => "lg",
+            "align" => "start",
+            "color" => "#0084B6",
+            "action" => [
+              "type" => "uri",
+              "label" => "View Details",
+              "uri" => "https://google.co.th/"
+            ]
+          ]
+        ]
+      ]
+    ]
+  ];
 			
 				$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				 'messages' => [$jsonFlex]
 				];
 				$post = json_encode($data);
-				$url = 'https://api.line.me/v2/bot/message/';
 			}else{
 				$text='';	
 				$messages = [
@@ -161,12 +156,11 @@ if (!is_null($events['events'])) {
 				'messages' => [$messages],
 				];
 				$post = json_encode($data);
-				$url = 'https://api.line.me/v2/bot/message/reply';
 			}
 			
 			
 			
-			
+			$url = 'https://api.line.me/v2/bot/message/reply';
 				
 					
 		
