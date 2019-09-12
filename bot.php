@@ -145,7 +145,7 @@ if (!is_null($events['events'])) {
 				];
 				$post = json_encode($data);
 			}else{
-				$text='';	
+				$text='xx';	
 				$messages = [
 				'type' => 'text',
 				'text' => $text
