@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			
 			
 			if($text=="งานประมูลที่กำลังจะถึง"){
-				$messages = ['{
+				$messages = [
   "type": "bubble",
   "body": {
     "type": "box",
@@ -141,13 +141,14 @@ if (!is_null($events['events'])) {
     ],
     "paddingAll": "0px"
   }
-}'];
+];
 			
 				$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 				];
 				$post = json_encode($data);
+				$url = 'https://api.line.me/v2/bot/message/';
 			}else{
 				$text='';	
 				$messages = [
@@ -160,11 +161,12 @@ if (!is_null($events['events'])) {
 				'messages' => [$messages],
 				];
 				$post = json_encode($data);
+				$url = 'https://api.line.me/v2/bot/message/reply';
 			}
 			
 			
 			
-			$url = 'https://api.line.me/v2/bot/message/reply';
+			
 				
 					
 		
