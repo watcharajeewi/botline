@@ -41,7 +41,7 @@ if (!is_null($events['events'])) {
 						],
 						"body" => [
 						  "type" => "box",
-						  "layout" => "horizontal",
+						  "layout" => "vertical",
 						  "spacing" => "md",
 						  "contents" => [
 							[
