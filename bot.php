@@ -25,6 +25,17 @@ if (!is_null($events['events'])) {
     "altText" => "งานประมูลที่กำลังจะถึง",
     "contents" => [
       "type" => "bubble",
+	"hero"=>[
+    "type"=> "image",
+    "url"=>"https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+    "size"=> "full",
+    "aspectRatio"=> "20:13",
+    "aspectMode": "cover",
+    "action"=> [
+      "type"=> "uri",
+      "uri"=> "http://linecorp.com/"
+    ]
+  ],
       "direction" => "ltr",
       "header" => [
         "type" => "box",
@@ -38,13 +49,7 @@ if (!is_null($events['events'])) {
             "weight" => "bold",
             "color" => "#009813"
           ],
-	  ["type"=> "image",
-              "url"=> "http://araidee.com/tabienrod//uat/filemanager/Uploads/chiangrai.png",
-              "gravity"=>"bottom",
-              "size"=>"sm",
-              "aspectRatio"=>"16:9",
-              "aspectMode"=>"cover"
-            ],
+	  
           [
             "type" => "text",
             "text" => "฿ 100.00",
