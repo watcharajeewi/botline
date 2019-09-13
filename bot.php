@@ -38,6 +38,13 @@ if (!is_null($events['events'])) {
             "weight" => "bold",
             "color" => "#009813"
           ],
+	  ["type"=> "image",
+              "url"=> "http://araidee.com/tabienrod//uat/filemanager/Uploads/chiangrai.png",
+              "gravity"=>"bottom",
+              "size"=>"sm",
+              "aspectRatio"=>"16:9",
+              "aspectMode"=>"cover"
+            ],
           [
             "type" => "text",
             "text" => "฿ 100.00",
