@@ -54,6 +54,13 @@ if (!is_null($events['events'])) {
 							  "size" => "sm",
 							  "weight" => "bold",
 							  "color" => "#AAAAAA"
+							],
+							  [
+							  "type" => "text",
+							  "text" => "สระบุรี หมวด กย วันที่ 14-15 กันยายน 2562",
+							  "size" => "sm",
+							  "weight" => "bold",
+							  "color" => "#AAAAAA"
 							]
 						  ]
 						]
