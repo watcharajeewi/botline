@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 						  "contents" => [
 							[
 							  "type" => "image",
-							  "url" => "https://developers.line.me/assets/images/services/bot-designer-icon.png"
+							  "url" => "http://araidee.com/tabienrod//uat/filemanager/Uploads/chiangrai.png"
 							]
 						  ]
 						]
