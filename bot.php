@@ -23,6 +23,7 @@ if (!is_null($events['events'])) {
 			$jsonFlex = [
 					"type" => "flex",
 					  "altText" => "Flex Message",
+				"direction" => "ltr",
 					  "contents" => [
 						"type" => "bubble",
 						"header" => [
