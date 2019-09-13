@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
 							[
 							  "type" => "image",
 							  "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-             						 "aspectMode": "fit"
+             						 "aspectMode"=>"fit"
 							],
 							  [
 							  "type" => "text",
@@ -55,7 +55,7 @@ if (!is_null($events['events'])) {
 							  "size" => "sm",
 							  "weight" => "bold",
 							  "color" => "#AAAAAA",
-             						  "wrap": true
+             						  "wrap"=> true
 							],
 							  [
 							  "type" => "text",
@@ -63,7 +63,7 @@ if (!is_null($events['events'])) {
 							  "size" => "sm",
 							  "weight" => "bold",
 							  "color" => "#AAAAAA",
-              						  "wrap": true	
+              						  "wrap"=> true	
 							]
 						  ]
 						]
