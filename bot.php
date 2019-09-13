@@ -46,7 +46,8 @@ if (!is_null($events['events'])) {
 						  "contents" => [
 							[
 							  "type" => "image",
-							  "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
+							  "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+             						 "aspectMode": "fit"
 							],
 							  [
 							  "type" => "text",
