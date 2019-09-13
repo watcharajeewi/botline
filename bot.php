@@ -25,7 +25,6 @@ if (!is_null($events['events'])) {
     "altText" => "งานประมูลที่กำลังจะถึง",
     "contents" => [
       "type" => "bubble",
-	
       "direction" => "ltr",
       "header" => [
         "type" => "box",
