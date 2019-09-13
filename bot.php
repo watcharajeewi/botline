@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			if($text=="งานประมูลที่กำลังจะถึง"){
 			$jsonFlex = [
 					"type" => "flex",
-					  "altText" => "Flex Message",
+					  "altText" => "งานประมูลที่กำลังจะถึง",
 				"direction" => "ltr",
 					  "contents" => [
 						"type" => "bubble",
@@ -47,6 +47,13 @@ if (!is_null($events['events'])) {
 							[
 							  "type" => "image",
 							  "url" => "https://developers.line.me/assets/images/services/bot-designer-icon.png"
+							],
+							  [
+							  "type" => "text",
+							  "text" => "เชียงราย 13 หมวด กว วันที่ 14-15 กันยายน 2562",
+							  "size" => "sm",
+							  "weight" => "bold",
+							  "color" => "#AAAAAA"
 							]
 						  ]
 						]
