@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 						  "contents" => [
 							[
 							  "type" => "image",
-							  "url" => "https://developers.line.me/assets/images/services/bot-designer-icon.png"
+							  "url" => "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
 							],
 							  [
 							  "type" => "text",
