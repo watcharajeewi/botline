@@ -72,7 +72,7 @@ if (!is_null($events['events'])) {
 					  
 					  
 					 $url = 'http://car.tabienrod.com/lineapp/getauction.php';					
-												
+					$data='';						
 					$option = array(
 						'http' => array(
 							'header' => "Content-type: application/x-www-form-urlencoded\r\n ;charset=utf-8 ",
