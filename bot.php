@@ -72,12 +72,12 @@ if (!is_null($events['events'])) {
 					  
 					  
 					 $url = 'http://car.tabienrod.com/lineapp/getauction.php';					
-					$data='';						
+					$datax='';						
 					$option = array(
 						'http' => array(
 							'header' => "Content-type: application/x-www-form-urlencoded\r\n ;charset=utf-8 ",
 							'method' => 'POST',
-							'content' => http_build_query($data),
+							'content' => http_build_query($datax),
 						),
 					);
 
@@ -94,12 +94,12 @@ if (!is_null($events['events'])) {
 			}else{
 				
 				 $url = 'http://car.tabienrod.com/lineapp/getauction.php';					
-												
+				$datax='';								
 				$option = array(
 					'http' => array(
 						'header' => "Content-type: application/x-www-form-urlencoded\r\n ;charset=utf-8 ",
 						'method' => 'POST',
-						'content' => http_build_query($data),
+						'content' => http_build_query($datax),
 					),
 				);
 
