@@ -83,7 +83,7 @@ if (!is_null($events['events'])) {
 
 					$context = stream_context_create($option);
 					$results = file_get_contents($url, false, $context); 
-					$jsonFlex=[$results];
+					$jsonFlex=$results;
 					  
 			
 				$data = [
@@ -92,7 +92,20 @@ if (!is_null($events['events'])) {
 				];
 				$post = json_encode($data);
 			}else{
-				$text='xx';	
+				
+				 $url = 'http://car.tabienrod.com/lineapp/getauction.php';					
+												
+				$option = array(
+					'http' => array(
+						'header' => "Content-type: application/x-www-form-urlencoded\r\n ;charset=utf-8 ",
+						'method' => 'POST',
+						'content' => http_build_query($data),
+					),
+				);
+
+				$context = stream_context_create($option);
+				$text = file_get_contents($url, false, $context); 
+				
 				$messages = [
 				'type' => 'text',
 				'text' => $text
