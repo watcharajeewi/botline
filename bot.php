@@ -83,7 +83,7 @@ if (!is_null($events['events'])) {
 
 					$context = stream_context_create($option);
 					$results = file_get_contents($url, false, $context); 
-					$jsonFlex=$results;
+					$jsonFlex=[$results];
 					  
 			
 				$data = [
